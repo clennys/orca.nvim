@@ -10,12 +10,12 @@ Feedback is very welcome!
 
 ### Install
 ```lua
-		use({
-			"devnnys/orca.nvim",
-			config = function()
-				require("orca")
-			end,
-		})
+use({
+	"devnnys/orca.nvim",
+	config = function()
+		require("orca")
+	end,
+})
 ```
 
 ### Screenshots
