@@ -8,6 +8,16 @@ Feedback is very welcome!
 - nvim-cmp
 - Nvim-Tree
 
+### Install
+```lua
+		use({
+			"devnnys/orca.nvim",
+			config = function()
+				require("orca")
+			end,
+		})
+```
+
 ### Screenshots
 ![Screenshot01](/media/nvim01.png?raw=true "Example Screenshot01")
 ![Screenshot02](/media/nvim02.png?raw=true "Example Screenshot02")
