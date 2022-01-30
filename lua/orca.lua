@@ -28,7 +28,7 @@ function orca.terminal_color()
 	vim.g.terminal_color_5 = orca.purple
 	vim.g.terminal_color_6 = orca.cyan
 	vim.g.terminal_color_7 = orca.fg
-	vim.g.terminal_color_8 = orca.commen_grey
+	vim.g.terminal_color_8 = orca.comment_grey
 	vim.g.terminal_color_9 = orca.red
 	vim.g.terminal_color_10 = orca.green
 	vim.g.terminal_color_11 = orca.yellow
@@ -196,7 +196,7 @@ function orca.load_plugin_syntax()
 		TSStringRegex = { fg = orca.purple },
 		TSStrong = { fg = orca.yellow },
 		TSTag = { fg = orca.blue },
-		TSTagDelimiter = { fg = orca.commen_grey },
+		TSTagDelimiter = { fg = orca.comment_grey },
 		TSText = { fg = orca.yellow },
 		TSTitle = { fg = orca.dark_blue },
 		TSType = { fg = orca.light_blue },
@@ -212,7 +212,7 @@ function orca.load_plugin_syntax()
 		-- nvim-cmp
 		CmpItemMenu = { fg = orca.fg, bg = orca.black0 },
 		CmpItemAbbr = { fg = orca.white1, bg = orca.black0 },
-		CmpItemAbbrDeprecated = { fg = orca.commen_grey, bg = orca.black0, style = "strikethrough" },
+		CmpItemAbbrDeprecated = { fg = orca.comment_grey, bg = orca.black0, style = "strikethrough" },
 		CmpItemAbbrMatch = { fg = orca.yellow, bg = orca.black0 },
 		CmpItemAbbrMatchFuzzy = { fg = orca.yellow, bg = orca.black0 },
 		CmpItemKind = { fg = orca.blue, bg = orca.black0 },
@@ -270,7 +270,24 @@ function orca.load_plugin_syntax()
 		NvimTreeRootFolder = { fg = orca.green, bg = orca.bg },
 		NvimTreeSpecialFile = { fg = orca.blue, style = "underline" },
 		NvimTreeSymlink = { fg = orca.blue, style = "bold" },
-		NvimTreeOpenedFolderName = {fg=orca.purple}
+		NvimTreeOpenedFolderName = {fg=orca.purple},
+
+		-- notify-nvim
+		NotifyERRORBorder = {fg = orca.red},
+		NotifyWARNBorder = {fg = orca.yellow},
+		NotifyINFOBorder = {fg = orca.cyan},
+		NotifyDEBUGBorder = {fg = orca.white1},
+		NotifyTRACEBorder = {fg = orca.purple},
+		NotifyERRORIcon = {fg = orca.red},
+		NotifyWARNIcon = {fg = orca.yellow},
+		NotifyINFOIcon = {fg = orca.cyan},
+		NotifyDEBUGIcon = {fg = orca.white1},
+		NotifyTRACEIcon = {fg = orca.purple},
+		NotifyERRORTitle  = {fg = orca.red},
+		NotifyWARNTitle = {fg = orca.yellow},
+		NotifyINFOTitle = {fg = orca.cyan},
+		NotifyDEBUGTitle  = {fg = orca.white1},
+		NotifyTRACETitle  = {fg = orca.purple},
 	}
 	return plugin_syntax
 end

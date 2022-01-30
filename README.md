@@ -4,9 +4,10 @@ Feel free to try it out.
 Feedback is very welcome!
 
 ### Features
-- TreeSitter
+- treesitter
 - nvim-cmp
-- Nvim-Tree
+- nvim-tree
+- nvim-notify
 
 ### Install
 ```lua
