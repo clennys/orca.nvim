@@ -1,21 +1,22 @@
 local orca = {
-	bg = "#1c2023", -- 1
-	fg = "#d8dee9", -- 8
-	red = "#bf616a", -- 3
-	orange = "#d08770", -- 2
-	yellow = "#ebcb8b", -- 9
-	purple = "#b48ead", -- 4
-	cyan = "#96b4b5", -- 0, 12
-	green = "#a3be8c", -- 7
+	bg = "#1c2023",
+	fg = "#d8dee9",
+	red = "#bf616a",
+	orange = "#d08770",
+	yellow = "#ebcb8b",
+	purple = "#b48ead",
+	cyan = "#96b4b5",
+	green = "#a3be8c",
 	light_green = "#8FBCBB",
-	blue = "#81a1c1", -- 5
-	light_blue = "#88c0d0", -- 6
-	dark_blue = "#5e81ac", -- 10
-	comment_grey = "#697884", --11
-	linenr_grey = "#4e5961", -- 17
-	black0 = "#242a2e", -- 16
-	black1 = "#2d3439", --13
-	white0 = "#eceff4", -- 14
+	blue = "#81a1c1",
+	light_blue = "#88c0d0",
+	dark_blue = "#5e81ac",
+	comment_grey = "#697884",
+	linenr_grey = "#4e5961",
+	black0 = "#242a2e",
+	black1 = "#2d3439",
+	black2 = '#101315',
+	white0 = "#eceff4",
 	white1 = "#acb1ba",
 	none = "NONE",
 }
@@ -68,7 +69,7 @@ function orca.load_syntax()
 		CursorLine = { fg = orca.none, bg = orca.bg },
 		LineNr = { fg = orca.linenr_grey },
 		qfLineNr = { fg = orca.cyan },
-		CursorLineNr = { fg = orca.blue, style="bold" },
+		CursorLineNr = { fg = orca.blue, style = "bold" },
 		DiffAdd = { fg = orca.green, bg = orca.bg },
 		DiffChange = { fg = orca.yellow, bg = orca.bg },
 		DiffDelete = { fg = orca.red, bg = orca.bg },
@@ -170,13 +171,13 @@ function orca.load_plugin_syntax()
 		TSField = { fg = orca.fg },
 		TSFloat = { fg = orca.cyan },
 		TSFuncBuiltin = { fg = orca.light_green },
-		TSFuncMacro = { fg = orca.blue},
+		TSFuncMacro = { fg = orca.blue },
 		TSFunction = { fg = orca.yellow, style = "italic" },
 		TSInclude = { fg = orca.purple },
 		TSKeyword = { fg = orca.dark_blue },
 		TSKeywordFunction = { fg = orca.blue },
 		TSKeywordOperator = { fg = orca.red },
-		TSKeywordReturn = { fg = orca.blue},
+		TSKeywordReturn = { fg = orca.blue },
 		TSLabel = { fg = orca.light_blue },
 		TSLiteral = { fg = orca.yellow },
 		TSMethod = { fg = orca.green },
@@ -271,30 +272,40 @@ function orca.load_plugin_syntax()
 		NvimTreeRootFolder = { fg = orca.green, bg = orca.bg },
 		NvimTreeSpecialFile = { fg = orca.blue, style = "underline" },
 		NvimTreeSymlink = { fg = orca.blue, style = "bold" },
-		NvimTreeOpenedFolderName = {fg=orca.purple},
+		NvimTreeOpenedFolderName = { fg = orca.purple },
 
 		-- notify-nvim
-		NotifyERRORBorder = {fg = orca.red},
-		NotifyWARNBorder = {fg = orca.yellow},
-		NotifyINFOBorder = {fg = orca.cyan},
-		NotifyDEBUGBorder = {fg = orca.white1},
-		NotifyTRACEBorder = {fg = orca.purple},
-		NotifyERRORIcon = {fg = orca.red},
-		NotifyWARNIcon = {fg = orca.yellow},
-		NotifyINFOIcon = {fg = orca.cyan},
-		NotifyDEBUGIcon = {fg = orca.white1},
-		NotifyTRACEIcon = {fg = orca.purple},
-		NotifyERRORTitle  = {fg = orca.red},
-		NotifyWARNTitle = {fg = orca.yellow},
-		NotifyINFOTitle = {fg = orca.cyan},
-		NotifyDEBUGTitle  = {fg = orca.white1},
-		NotifyTRACETitle  = {fg = orca.purple},
+		NotifyERRORBorder = { fg = orca.red },
+		NotifyWARNBorder  = { fg = orca.yellow },
+		NotifyINFOBorder  = { fg = orca.cyan },
+		NotifyDEBUGBorder = { fg = orca.white1 },
+		NotifyTRACEBorder = { fg = orca.purple },
+		NotifyERRORIcon   = { fg = orca.red },
+		NotifyWARNIcon    = { fg = orca.yellow },
+		NotifyINFOIcon    = { fg = orca.cyan },
+		NotifyDEBUGIcon   = { fg = orca.white1 },
+		NotifyTRACEIcon   = { fg = orca.purple },
+		NotifyERRORTitle  = { fg = orca.red },
+		NotifyWARNTitle   = { fg = orca.yellow },
+		NotifyINFOTitle   = { fg = orca.cyan },
+		NotifyDEBUGTitle  = { fg = orca.white1 },
+		NotifyTRACETitle  = { fg = orca.purple },
 
 		-- Neorg fix
-		NeorgMarkupItalic = {fg = orca.orange, style = "italic"},
-		NeorgMarkupUnderline = {fg = orca.yellow, style = "underline"},
-		NeorgMarkupVariable = {fg = orca.green, style = "bold"},
-		NeorgMarkupBold = {fg = orca.yellow, style = "bold"},
+		NeorgMarkupItalic = { fg = orca.orange, style = "italic" },
+		NeorgMarkupUnderline = { fg = orca.yellow, style = "underline" },
+		NeorgMarkupVariable = { fg = orca.green, style = "bold" },
+		NeorgMarkupBold = { fg = orca.yellow, style = "bold" },
+
+		-- headlines
+		Headline1 = { bg = orca.light_blue, fg = orca.bg, style = "bold" },
+		Headline2 = { bg = orca.purple, fg = orca.bg, style = "bold" },
+		Headline3 = { bg = orca.orange, fg = orca.bg, style = "bold" },
+		Headline4 = { bg = orca.cyan, fg = orca.bg, style = "bold" },
+		Headline5 = { bg = orca.yellow, fg = orca.bg, style = "bold" },
+		Headline6 = { bg = orca.blue, fg = orca.bg, style = "bold" },
+		CodeBlock = { bg = orca.black2 },
+		Dash = { fg = orca.red, style = 'bold' }
 
 	}
 	return plugin_syntax
