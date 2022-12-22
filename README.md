@@ -1,4 +1,4 @@
-# orca.nvim (WIP not yet updated for new treesitter highlighting groups)
+# orca.nvim (WIP)
 New nord inspired neovim colorscheme.
 Feel free to try it out.
 Feedback is very welcome!
