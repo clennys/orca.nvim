@@ -25,4 +25,5 @@ use({
 ![Screenshot03](/media/nvim03.png?raw=true "Example Screenshot03")
 
 ### Credits
-- ![zephyr-nvim](https://github.com/glepnir/zephyr-nvim)
+- [zephyr-nvim](https://github.com/glepnir/zephyr-nvim)
+- [Nord](https://www.nordtheme.com/)
