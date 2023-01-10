@@ -89,7 +89,8 @@ function orca.load_syntax()
 		PmenuThumb = { fg = orca.white0, bg = orca.comment_grey },
 		WildMenu = { fg = orca.light_blue, },
 		Question = { fg = orca.yellow },
-		NormalFloat = { fg = orca.fg, bg = orca.black0 },
+		NormalFloat = { fg = orca.fg },
+		FloatBoarder = { fg = orca.fg },
 		Tabline = { fg = orca.linenr_grey, },
 		TabLineFill = { style = orca.none },
 		TabLineSel = { fg = orca.fg, bg = orca.black1, style = "bold" },
@@ -189,6 +190,7 @@ function orca.load_plugin_syntax()
 		["@text.title"] = { fg = orca.cyan, style = "bold" },
 		["@type"] = { fg = orca.light_blue },
 		["@type.definition"] = { fg = orca.yellow },
+		["@type.qualifier"] = { fg = orca.purple },
 		["@text.uri"] = { fg = orca.yellow, style = "underline" },
 		["@text.underline"] = { fg = orca.yellow },
 		["@variable"] = { fg = orca.fg },
@@ -201,11 +203,11 @@ function orca.load_plugin_syntax()
 		["@text.strong"] = { fg = orca.orange, style = "bold" },
 		["@text.environment.name"] = { fg = orca.blue },
 		["@comment"] = { fg = orca.comment_grey },
-		["@define"] = { fg = orca.cyan },
+		["@define"] = { fg = orca.red },
 		["@macro"] = { fg = orca.orange },
 		["@storageclass"] = { fg = orca.blue },
 		["@structure"] = { fg = orca.yellow },
-		["@preproc"] = { fg = orca.cyan },
+		["@preproc"] = { fg = orca.dark_blue },
 		["@debug"] = { fg = orca.cyan },
 
 
@@ -303,7 +305,7 @@ function orca.load_plugin_syntax()
 		Headline5 = { bg = orca.yellow, fg = orca.bg, style = "bold" },
 		Headline6 = { bg = orca.blue, fg = orca.bg, style = "bold" },
 		CodeBlock = { bg = orca.black2 },
-		Dash = { fg = orca.red, style = 'bold' }
+		Dash = { fg = orca.red, style = 'bold' },
 
 	}
 	return plugin_syntax
