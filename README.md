@@ -20,9 +20,9 @@ use({
 ```
 
 ### Screenshots
-![Screenshot01](/media/nvim01.png?raw=true "Example Screenshot01")
-![Screenshot02](/media/nvim02.png?raw=true "Example Screenshot02")
-![Screenshot03](/media/nvim03.png?raw=true "Example Screenshot03")
+![Screenshot01](/media/orca01.png?raw=true "Example Screenshot01")
+![Screenshot02](/media/orca02.png?raw=true "Example Screenshot02")
+![Screenshot03](/media/orca03.png?raw=true "Example Screenshot03")
 
 ### Credits
 - [zephyr-nvim](https://github.com/glepnir/zephyr-nvim)
