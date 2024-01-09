@@ -1,1 +1,1 @@
-lua require('orca')
+lua require 'orca' .load()

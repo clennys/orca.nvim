@@ -1,0 +1,28 @@
+local C = require 'orca.colors'
+
+return {
+	CmpItemMenu = { fg = C.fg, bg = C.black.dark },
+	CmpItemAbbr = { fg = C.white_grey.grey, bg = C.black.dark },
+	CmpItemAbbrDeprecated = { fg = C.white_grey.comment_grey, bg = C.black.dark, strikethrough = true },
+	CmpItemAbbrMatch = { fg = C.yellow.base, bg = C.black.dark },
+	CmpItemAbbrMatchFuzzy = { fg = C.yellow.base, bg = C.black.dark },
+	CmpItemKind = { fg = C.blue.base, bg = C.black.dark },
+	CmpItemKindVariable = { fg = C.blue.bright, bg = C.black.dark },
+	CmpItemKindInterface = { fg = C.cyan.base, bg = C.black.dark },
+	CmpItemKindText = { fg = C.white_grey.grey, bg = C.black.dark },
+	CmpItemKindFunction = { fg = C.yellow.base },
+	CmpItemKindMethod = { fg = C.green.base },
+	CmpItemKindKeyword = { fg = C.blue.base },
+	CmpItemKindProperty = { fg = C.blue.base },
+	CmpItemKindUnit = { fg = C.purple.base, bg = C.black.dark },
+	CmpItemKindClass = { fg = C.orange.base, bg = C.black.dark },
+	CmpItemKindModule = { fg = C.purple.base, bg = C.black.dark },
+	CmpItemKindConstant = { fg = C.red.base, bg = C.black.dark },
+	CmpItemKindEnum = { fg = C.blue.dark, bg = C.black.dark },
+	CmpItemKindSnippet = { fg = C.cyan.base, bg = C.black.dark },
+	CmpItemKindFolder = { fg = C.white_grey.grey, bg = C.black.dark },
+	CmpItemKindFile = { fg = C.green.base, bg = C.black.dark },
+	CmpItemKindValue = { fg = C.blue.base, bg = C.black.dark },
+	CmpItemKindField = { fg = C.blue.base, bg = C.black.dark },
+	CmpItemKindStruct = { fg = C.yellow.base },
+}
