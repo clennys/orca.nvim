@@ -1,5 +1,3 @@
-local O = require('orca.config').options
-
 local palette = {
 	bg = "#1c2023",
 	fg = "#d8dee9",
@@ -47,6 +45,7 @@ local palette = {
 
 	},
 	black = {
+		base = "#1c2023",
 		dark = "#242a2e", -- black 0
 		brighter = "#2d3439", -- black 1
 		darkest = '#101315', -- black 2

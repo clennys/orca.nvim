@@ -14,6 +14,9 @@ function C.extend_palette()
 		add = U.blend(C.green.base, C.bg, diff_blend),
 		delete = U.blend(C.red.base, C.bg, diff_blend),
 	}
+
+	C.bg = (O.transparent_bg and C.none) or C.black.base
+
 end
 
 return C
