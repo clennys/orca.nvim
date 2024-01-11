@@ -9,39 +9,39 @@ orca.normal = {
 }
 
 orca.insert = {
-    a = { bg = C.green.bright, fg = C.black0, gui = 'bold' },
-    b = { bg = C.gray1, fg = C.white1 },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.green.bright, fg = C.black.base, gui = 'bold' },
+    b = { bg = C.bg, fg = C.fg },
+    c = { bg = C.bg, fg = C.fg },
 }
 
 orca.command = {
-    a = { bg = C.cyan.bright, fg = C.black0, gui = 'bold' },
-    b = { bg = C.gray1, fg = C.white1 },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.cyan.bright, fg = C.black.base, gui = 'bold' },
+    b = { bg = C.bg, fg = C.fg },
+    c = { bg = C.bg, fg = C.fg },
 }
 
 orca.visual = {
-    a = { bg = C.red.bright, fg = C.black0, gui = 'bold' },
-    b = { bg = C.gray1, fg = C.white1 },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.purple.bright, fg = C.black.base, gui = 'bold' },
+    b = { bg = C.bg, fg = C.fg },
+    c = { bg = C.bg, fg = C.fg },
 }
 
 orca.replace = {
-    a = { bg = C.magenta.bright, fg = C.black0, gui = 'bold' },
-    b = { bg = C.gray1, fg = C.white1 },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.yellow.bright, fg = C.black.base, gui = 'bold' },
+    b = { bg = C.bg, fg = C.fg },
+    c = { bg = C.bg, fg = C.fg },
 }
 
 orca.terminal = {
-    a = { bg = C.blue2, fg = C.black0, gui = 'bold' },
-    b = { bg = C.gray1, fg = C.white1 },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.blue.bright, fg = C.black.base, gui = 'bold' },
+    b = { bg = C.bg, fg = C.fg },
+    c = { bg = C.bg, fg = C.fg },
 }
 
 orca.inactive = {
-    a = { bg = C.gray2, fg = C.black0, gui = 'bold' },
-    b = { bg = C.gray1, fg = C.white1 },
-    c = { bg = C.bg_statusline, fg = C.white0 },
+    a = { bg = C.white_grey.linenr_grey, fg = C.black.base, gui = 'bold' },
+    b = { bg = C.bg, fg = C.fg },
+    c = { bg = C.bg, fg = C.fg },
 }
 
 return orca
