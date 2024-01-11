@@ -1,5 +1,11 @@
 local C = require 'orca.colors'
 local O = require('orca.config').options
+
+-- TODO:
+-- HACK:
+-- WARN:
+-- PERF:
+-- NOTE:
 return {
 	Boolean = { fg = C.purple.base },
 	Number = { fg = C.orange.base },
@@ -20,7 +26,7 @@ return {
 	Label = { fg = C.blue.base },
 	Structure = { fg = C.yellow.base },
 	Operator = { fg = C.red.base },
-	Title = { fg = C.blue.dark, bold = true },
+	Title = { fg = C.blue.base, bold = true },
 	Special = { fg = C.blue.dark },
 	SpecialChar = { fg = C.orange.base },
 	Type = { fg = C.blue.bright },

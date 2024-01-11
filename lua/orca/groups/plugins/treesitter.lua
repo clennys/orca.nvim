@@ -1,7 +1,8 @@
 local C = require 'orca.colors'
 local U = require 'orca.utils'
 
-return { -- Treesitter
+return { 
+	-- Treesitter
 	["@annotation"] = { fg = C.white_grey.comment_grey },
 	["@attribute"] = { fg = C.purple.base },
 	["@boolean"] = { fg = C.purple.base },
@@ -114,4 +115,7 @@ return { -- Treesitter
     ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
     ["@lsp.typemod.variable.injected"] = { link = "@variable" },
     ["@lsp.typemod.variable.static"] = { link = "@constant" },
+	-- Treesitter refactor
+	TSDefinition = {fg = C.fg, bg = U.darken(C.yellow.bright, 0.4), bold = true},
+	TSDefinitionUsage = {sp = C.yellow.bright, underline=true},
 }
