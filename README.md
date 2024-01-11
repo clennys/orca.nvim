@@ -1,29 +1,35 @@
 # orca.nvim (WIP)
-New nord inspired neovim colorscheme.
-Feel free to try it out.
+New nord inspired neovim colorscheme. Feel free to try it out.
 Feedback is very welcome!
-
-### Features
-- treesitter
-- nvim-cmp
-- nvim-tree
-- nvim-notify
 
 ### Install
 ```lua
-use({
-	"devnnys/orca.nvim",
+{
+    'clennys/orca.nvim',
+    lazy = false,
+    priority = 1000,
 	config = function()
-		require("orca")
+		require 'orca' .setup{
+			transparent_bg = false,
+            -- TODO: Add more options
+		}
+        require 'orca' .load()
 	end,
-})
+}
+```
+Lualine theme:
+```lua
+require'lualine'.setup {
+    options = {
+        theme = 'orca'
+    }
+}
 ```
 
 ### Screenshots
-![Screenshot01](/media/orca01.png?raw=true "Example Screenshot01")
-![Screenshot02](/media/orca02.png?raw=true "Example Screenshot02")
-![Screenshot03](/media/orca03.png?raw=true "Example Screenshot03")
+- TODO Add new screenshots
 
 ### Credits
-- [zephyr-nvim](https://github.com/glepnir/zephyr-nvim)
-- [Nord](https://www.nordtheme.com/)
+- [nord](https://www.nordtheme.com/)
+- [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim)
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
