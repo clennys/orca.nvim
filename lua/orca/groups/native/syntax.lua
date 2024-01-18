@@ -1,5 +1,5 @@
-local C = require 'orca.colors'
-local O = require('orca.config').options
+local C = require("orca.colors")
+local O = require("orca.config").options
 
 -- TODO:
 -- HACK:
@@ -43,5 +43,4 @@ return {
 	Delimiter = { fg = C.red.base },
 	Ignore = { fg = C.white_grey.linenr_grey },
 	Underlined = { underline = true },
-
 }

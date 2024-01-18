@@ -1,6 +1,6 @@
-local U = require 'orca.utils'
-local O = require('orca.config').options
-local C = require 'orca.colors.palette'
+local U = require("orca.utils")
+local O = require("orca.config").options
+local C = require("orca.colors.palette")
 
 function C.extend_palette()
 	-- Modify the palette before generating colors.
@@ -16,7 +16,6 @@ function C.extend_palette()
 	}
 
 	C.bg = (O.transparent_bg and C.none) or C.black.base
-
 end
 
 return C

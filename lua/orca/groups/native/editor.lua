@@ -1,4 +1,5 @@
-local C = require 'orca.colors'
+local C = require("orca.colors")
+local U = require("orca.utils")
 -- local O = require('orca.config').options
 
 return {
@@ -21,9 +22,9 @@ return {
 	CursorColumn = { bg = C.black.brighter },
 	CursorLine = { bg = C.black.brighter },
 	LineNr = { fg = C.white_grey.linenr_grey },
-	qfLineNr = { fg = C.cyan.base },
+	qfLineNr = { fg = C.blue.base },
 	CursorLineNr = { fg = C.blue.base, bold = true },
-	Directory = { fg = C.purple.base, bg = C.none },
+	Directory = { fg = C.green.base, bg = C.none },
 	ErrorMsg = { fg = C.red.bright, bg = C.none, bold = true },
 	WarningMsg = { fg = C.yellow.bright, bg = C.none, bold = true },
 	ModeMsg = { fg = C.fg, bg = C.none, bold = true },
@@ -41,7 +42,7 @@ return {
 	NormalFloat = { fg = C.fg },
 	FloatBoarder = { fg = C.fg },
 	Tabline = { fg = C.white_grey.linenr_grey },
-	TabLineFill = {bg = C.None},
+	TabLineFill = { bg = C.None },
 	TabLineSel = { fg = C.fg, bg = C.black.brighter, bold = true },
 	StatusLine = { fg = C.white_grey.base },
 	StatusLineNC = { fg = C.fg },
@@ -51,8 +52,8 @@ return {
 	SpellRare = { sp = C.purple.bright, undercurl = true },
 	Visual = { fg = C.fg, bg = C.black.brighter },
 	VisualNOS = { fg = C.fg, bg = C.black.brighter },
-	QuickFixLine = { bg = C.yellow.base, bold = true },
-	Debug = { fg = C.orange.base },
+	QuickFixLine = { fg = C.fg, bg = U.darken(C.yellow.bright, 0.7), bold = true },
+	Debug = { fg = C.red.base },
 	debugBreakpoint = { fg = C.fg, bg = C.red.base },
 	Substitute = { bg = C.cyan.bright, fg = C.black.base },
 }

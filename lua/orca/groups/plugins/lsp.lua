@@ -1,5 +1,5 @@
-local C = require 'orca.colors'
-local U = require 'orca.utils'
+local C = require("orca.colors")
+local U = require("orca.utils")
 
 return {
 	DiagnosticInfo = { fg = C.cyan.bright },
@@ -14,8 +14,8 @@ return {
 	DiagnosticSignError = { fg = C.red.bright },
 	DiagnosticSignHint = { fg = C.cyan.bright },
 	DiagnosticSignWarn = { fg = C.yellow.bright },
-	DiagnosticVirtualTextInfo = { fg = C.cyan.bright, bg = U.darken(C.cyan.bright, 0.7)},
-	DiagnosticVirtualTextError = { fg = C.red.bright, bg = U.darken(C.red.bright, 0.7)},
-	DiagnosticVirtualTextHint = { fg = C.cyan.bright, bg = U.darken(C.cyan.bright, 0.7)},
-	DiagnosticVirtualTextWarn = { fg = C.yellow.bright, bg = U.darken(C.yellow.bright, 0.7)},
+	DiagnosticVirtualTextInfo = { fg = C.cyan.bright, bg = U.darken(C.cyan.bright, 0.7) },
+	DiagnosticVirtualTextError = { fg = C.red.bright, bg = U.darken(C.red.bright, 0.7) },
+	DiagnosticVirtualTextHint = { fg = C.cyan.bright, bg = U.darken(C.cyan.bright, 0.7) },
+	DiagnosticVirtualTextWarn = { fg = C.yellow.bright, bg = U.darken(C.yellow.bright, 0.7) },
 }

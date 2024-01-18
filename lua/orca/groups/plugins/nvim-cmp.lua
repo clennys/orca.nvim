@@ -1,4 +1,4 @@
-local C = require 'orca.colors'
+local C = require("orca.colors")
 
 return {
 	CmpItemMenu = { fg = C.fg, bg = C.black.dark },
