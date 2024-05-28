@@ -9,6 +9,8 @@ M.integrations = {
 	"lsp",
 	"nvim-tree",
 	"treesitter",
+	"gitsigns",
+	"vimtex"
 }
 
 M.native = {

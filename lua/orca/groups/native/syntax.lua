@@ -1,11 +1,6 @@
 local C = require("orca.colors")
 local O = require("orca.config").options
 
--- TODO:
--- HACK:
--- WARN:
--- PERF:
--- NOTE:
 return {
 	Boolean = { fg = C.purple.base },
 	Number = { fg = C.orange.base },
